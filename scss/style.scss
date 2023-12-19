@@ -1,0 +1,182 @@
+// estilos.scss
+ @import url(variables.scss);
+
+body {
+  font-size: $font-familia;
+  background-color: $color-primario;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E...%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border: solid red;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: darken($color-primario, 10%);
+    padding: $padding-horizontal;
+    text-align: center;
+  
+    /* Estilos para el título */
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  
+    /* Estilos para la imagen del header */
+    img {
+      max-width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Estilos para nav */
+  nav {
+    background-color: #333;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  
+    /* Estilos para nav ul */
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+  
+      /* Estilos para nav ul li */
+      li {
+        display: inline-block;
+        margin-right: 15px;
+  
+        /* Estilos para nav ul li a */
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  /* Estilo para formulario de contacto */
+  h1 {
+    text-align: center;
+    color: $color-primario;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: $padding-horizontal;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+  
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    select {
+      cursor: pointer;
+    }
+  
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    small {
+      color: #777;
+    }
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    background-color: blue;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Media queries */
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: #ff0000;
+    }
+  
+    header {
+      font-size: 18px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    footer {
+      background-color: blue;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      background-color: #ff0000;
+    }
+  
+    header {
+      font-size: 22px;
+    }
+  
+    main {
+      padding: 0px;
+    }
+  
+    footer {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: #ff0000;
+    }
+  
+    header {
+      font-size: 28px;
+    }
+  
+    main {
+      padding: 40px;
+    }
+  
+    footer {
+      font-size: 18px;
+    }
+  }
