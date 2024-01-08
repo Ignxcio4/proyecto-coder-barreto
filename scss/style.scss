@@ -1,6 +1,11 @@
 // estilos-scss
 @import url(../scss/style.scss);
 
+// Mixin para el borde rojo
+@mixin red-border {
+  border: solid red;
+}
+
 body {
     font-family: $font-family;
     background-color: $color-primario;
