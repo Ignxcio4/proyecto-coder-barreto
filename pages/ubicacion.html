@@ -6,13 +6,16 @@
     <meta name="keywords" content="autos, wrapping, motores, vehiculos, pintura, cambio, ubicacion,calle, partes">
     <meta name="Autor" content="Ignacio Barreto">
     <title>Owns Design | Ubicacion</title>
+    <!---link de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link de css-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icono" href="../Multimedia/img.ico">
   </head>
 
   <body>
     <header class="header">
-      <div>
+      <div data-aos="zoom-in"> 
         <div class="header-con-imagen">
           <h1>Nuestro local</h1>
           <img src="../Multimedia/logo.ico" alt="logo">    
@@ -32,18 +35,24 @@
 
     <main>
       <section>
-        <div>
+        <div data-aos="zoom-in-right">
           <h1>Donde podes ubicarnos</h1>
             <p></p>
         </div>
       </section>
     </main>  
     <main class="contendor-ubiacion">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.216531886012!2d-58.63186332690206!3d-34.80049384469747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc4b08a7d3375%3A0x75e436514308f8b3!2sAv.%20Brig.%20Gral.%20Juan%20Manuel%20de%20Rosas%2018500%2C%20Gonz%C3%A1lez%20Cat%C3%A1n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1699412343149!5m2!1ses-419!2sar" width="600" height="450" style="border:0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+          <iframe data-aos="flip-right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.216531886012!2d-58.63186332690206!3d-34.80049384469747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc4b08a7d3375%3A0x75e436514308f8b3!2sAv.%20Brig.%20Gral.%20Juan%20Manuel%20de%20Rosas%2018500%2C%20Gonz%C3%A1lez%20Cat%C3%A1n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1699412343149!5m2!1ses-419!2sar" width="600" height="450" style="border:0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
     </main>   
     <footer>
       <p>Owns Design | se reservan derechos de autor</p>
     </footer>
-      
+    
+      <!--link de Js-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!--inicializacion de aos -->
+      <script>
+        AOS.init(1600);
+      </script>
   </body>        
 </html>

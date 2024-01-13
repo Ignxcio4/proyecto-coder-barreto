@@ -7,13 +7,16 @@
     <meta name="keywords" content="autos, wrapping, motores, vehiculos, pintura, cambio, telefono, contacto, llamada">
     <meta name="Autor" content="Ignacio Barreto">
     <title>Owns Design  | Contacto</title>
+    <!---link de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link de css-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icono" href="">
   </head>
 <!--Cuerpo principal de mi pagina-->
   <body>
     <header class="header">
-      <div>
+      <div data-aos="flip-down">
         <div class="header-con-imagen">
           <h1>Owns Design | contacto</h1>
           <img src="../Multimedia/logo.ico" alt="logo">
@@ -30,7 +33,7 @@
       </div>
     </header>
     
-    <main>
+    <main data-aos="flip-down">
 
       <h1>Formulario de Usuario</h1>
 
@@ -72,5 +75,12 @@
     <footer>
       <p>Owns Design | se reservan derechos de autor</p> 
     </footer>
+
+     <!--link de Js-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!--inicializacion de aos -->
+     <script>
+       AOS.init();
+     </script>
   </body>
 </html>
